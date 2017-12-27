@@ -14,3 +14,28 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+.link-menu-bar {
+	display: block;
+	text-decoration: none;
+	font-size: 20px;
+	color: #ccc;
+	padding-top: 5px;
+}
+.link-menu-bar.link-menu-bar-active { 
+	color: #fff;
+	font-size: 25px;
+    position: relative; 
+    padding-top: 0px;
+}
+.link-menu-bar span {
+	font-size: 12px;
+	display: block;
+}
+.link-menu-bar.link-menu-bar-active span {
+	font-size: 13px
+}
+
+.footer-menu {
+	background: #f53d3d;
+}

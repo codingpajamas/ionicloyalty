@@ -1,11 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { Platform, Nav, MenuController } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
-import { SplashScreen } from '@ionic-native/splash-screen';
-
-import { NotificationPage } from '../pages/notification/notification';
-
-import { TabsPage } from '../pages/tabs/tabs';
+import { SplashScreen } from '@ionic-native/splash-screen'; 
 
 @Component({
   templateUrl: 'app.html'
@@ -13,7 +9,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage:any = TabsPage;
+  rootPage:string = 'HomePage';
   notificationPage:any;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, public menuCtrl: MenuController) {
@@ -24,7 +20,7 @@ export class MyApp {
       splashScreen.hide();
     });
 
-    this.notificationPage = NotificationPage;
+    // this.notificationPage = HomePage;
   }
 
   openPage(page) {
