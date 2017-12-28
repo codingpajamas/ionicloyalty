@@ -2,30 +2,26 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the MallinfoPage page.
+ * Generated class for the StamplistPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
 
 @IonicPage({
-    defaultHistory: ['HomePage']
+    defaultHistory: ['StampcardPage']
 })
 @Component({
-  selector: 'page-mallinfo',
-  templateUrl: 'mallinfo.html',
+  selector: 'page-stamplist',
+  templateUrl: 'stamplist.html',
 })
-export class MallinfoPage {
+export class StamplistPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  goTo(page:string){
-  	this.navCtrl.push(page);
-  }
-
   ionViewDidLoad() {
-    console.log('ionViewDidLoad MallinfoPage');
+    console.log('ionViewDidLoad StamplistPage');
   }
 
 }

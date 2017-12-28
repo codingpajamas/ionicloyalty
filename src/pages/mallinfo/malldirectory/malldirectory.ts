@@ -8,7 +8,9 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
+@IonicPage({
+    defaultHistory: ['MallinfoPage']
+})
 @Component({
   selector: 'page-malldirectory',
   templateUrl: 'malldirectory.html',
@@ -16,6 +18,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class MalldirectoryPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+  }
+
+  goTo(page:string){
+  	this.navCtrl.push(page);
   }
 
   ionViewDidLoad() {

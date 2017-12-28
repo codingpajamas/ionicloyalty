@@ -6,23 +6,20 @@
 -->
 <ion-header> 
   <ion-toolbar color="danger">
-    <ion-buttons left>
+    <ion-buttons left (click)="goTo('HomePage')">
       <button ion-button icon-only>
         <ion-icon name="home"></ion-icon>
       </button>
     </ion-buttons>
-    <ion-title text-center>Mall Info</ion-title> 
-    <ion-buttons end> 
-      <button ion-button icon-only>
-        <ion-icon name="qr-scanner"></ion-icon>
-      </button>
-    </ion-buttons>
+    <ion-title text-center>Mall Info</ion-title>  
   </ion-toolbar>
 </ion-header>
 
 
-<ion-content padding>
-
+<ion-content padding> 
+      <button ion-button (click)="goTo('MalleventPage')">
+        <ion-icon name="home"></ion-icon> Mall Item
+      </button> 
 </ion-content>
  
 <main-footer-menu></main-footer-menu>

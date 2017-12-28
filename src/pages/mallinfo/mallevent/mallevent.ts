@@ -2,20 +2,21 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the MallinfoPage page.
+ * Generated class for the MalleventPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
 
 @IonicPage({
-    defaultHistory: ['HomePage']
+    defaultHistory: ['MallinfoPage']
 })
+
 @Component({
-  selector: 'page-mallinfo',
-  templateUrl: 'mallinfo.html',
+  selector: 'page-mallevent',
+  templateUrl: 'mallevent.html',
 })
-export class MallinfoPage {
+export class MalleventPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -25,7 +26,7 @@ export class MallinfoPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad MallinfoPage');
+    console.log('ionViewDidLoad MalleventPage');
   }
 
 }

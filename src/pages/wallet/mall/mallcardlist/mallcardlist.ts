@@ -8,10 +8,12 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
+@IonicPage({
+    defaultHistory: ['MallcardPage']
+})
 @Component({
   selector: 'page-mallcardlist',
-  templateUrl: 'mallcardlist.html',
+  templateUrl: 'mallcardlist.html', 
 })
 export class MallcardlistPage {
 

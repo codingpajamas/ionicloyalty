@@ -8,7 +8,9 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
+@IonicPage({
+    defaultHistory: ['PromoPage']
+})
 @Component({
   selector: 'page-promolist',
   templateUrl: 'promolist.html',

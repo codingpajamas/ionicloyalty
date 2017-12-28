@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { MallcardlistPage } from './mallcardlist';
+import { StamplistPage } from './stamplist';
 import { ComponentsModule } from '../../../../components/components.module';
 
 @NgModule({
   declarations: [
-    MallcardlistPage,
+    StamplistPage,
   ],
   imports: [
-    IonicPageModule.forChild(MallcardlistPage),
+    IonicPageModule.forChild(StamplistPage),
     ComponentsModule
   ],
 })
-export class MallcardlistPageModule {}
+export class StamplistPageModule {}
