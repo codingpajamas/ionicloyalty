@@ -2,30 +2,26 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the StamplistPage page.
+ * Generated class for the StampviewPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
 
 @IonicPage({
-    defaultHistory: ['StampcardPage']
+  defaultHistory: ['StampcardPage']
 })
 @Component({
-  selector: 'page-stamplist',
-  templateUrl: 'stamplist.html',
+  selector: 'page-stampview',
+  templateUrl: 'stampview.html',
 })
-export class StamplistPage {
+export class StampviewPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  goTo(page:string){
-  	this.navCtrl.push(page);
-  }
-
   ionViewDidLoad() {
-    console.log('ionViewDidLoad StamplistPage');
+    console.log('ionViewDidLoad StampviewPage');
   }
 
 }
