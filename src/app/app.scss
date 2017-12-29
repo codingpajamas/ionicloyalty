@@ -87,8 +87,13 @@
 	font-size: 11px; 
 }
 
-
-
+// list override
+ion-item.full-border {
+	border-bottom: 1px solid #dedede;
+}
+ion-item.full-border .item-inner {
+	border-bottom: none !important;
+}
 
 
 

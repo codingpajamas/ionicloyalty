@@ -24,6 +24,10 @@ export class MallinfoPage {
   	this.navCtrl.push(page);
   }
 
+  getItems(){
+    
+  }
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad MallinfoPage');
   }

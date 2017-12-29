@@ -11,15 +11,61 @@
         <ion-icon name="home"></ion-icon>
       </button>
     </ion-buttons>
-    <ion-title text-center>Mall Info</ion-title>  
+    <ion-title text-center>List of Malls</ion-title>  
   </ion-toolbar>
 </ion-header>
 
+<ion-content>  
+  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
 
-<ion-content padding> 
-      <button ion-button (click)="goTo('MalleventPage')">
-        <ion-icon name="home"></ion-icon> Mall Item
-      </button> 
+  <ion-item-group>
+    <ion-item-divider color="light">H</ion-item-divider>
+    <ion-item class="full-border" (click)="goTo('MalleventPage')">
+      <ion-avatar item-start>
+        <img src="/assets/imgs/hillogo.png">
+      </ion-avatar>
+      <h2>Hillion Mall</h2>
+      <p>28 Road Name, City Name</p>
+      <button ion-button clear item-end>View</button>
+    </ion-item>
+    <ion-item class="full-border" (click)="goTo('MalleventPage')">
+      <ion-avatar item-start>
+        <img src="/assets/imgs/hillogo.png">
+      </ion-avatar>
+      <h2>Hillion Mall</h2>
+      <p>28 Road Name, City Name</p>
+      <button ion-button clear item-end>View</button>
+    </ion-item>
+    <ion-item-divider color="light">I</ion-item-divider>
+    <ion-item class="full-border" (click)="goTo('MalleventPage')">
+      <ion-avatar item-start>
+        <img src="/assets/imgs/hillogo.png">
+      </ion-avatar>
+      <h2>Hillion Mall</h2>
+      <p>28 Road Name, City Name</p>
+      <button ion-button clear item-end>View</button>
+    </ion-item>
+    <ion-item class="full-border" (click)="goTo('MalleventPage')">
+      <ion-avatar item-start>
+        <img src="/assets/imgs/hillogo.png">
+      </ion-avatar>
+      <h2>Hillion Mall</h2>
+      <p>28 Road Name, City Name</p>
+      <button ion-button clear item-end>View</button>
+    </ion-item>
+    <ion-item-divider color="light">M</ion-item-divider>
+    <ion-item class="full-border" (click)="goTo('MalleventPage')">
+      <ion-avatar item-start>
+        <img src="/assets/imgs/hillogo.png">
+      </ion-avatar>
+      <h2>Hillion Mall</h2>
+      <p>28 Road Name, City Name</p>
+      <button ion-button clear item-end>View</button>
+    </ion-item>
+  </ion-item-group> 
+ 
+  <div class="mb80">&nbsp;</div>
+
 </ion-content>
  
 <main-footer-menu></main-footer-menu>
