@@ -2,20 +2,20 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the MallcardlistPage page.
+ * Generated class for the MallcardviewPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
 
 @IonicPage({
-    defaultHistory: ['MallcardPage']
+  defaultHistory: ['MallcardPage']
 })
 @Component({
-  selector: 'page-mallcardlist',
-  templateUrl: 'mallcardlist.html', 
+  selector: 'page-mallcardview',
+  templateUrl: 'mallcardview.html',
 })
-export class MallcardlistPage {
+export class MallcardviewPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -25,7 +25,7 @@ export class MallcardlistPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad MallcardlistPage');
+    console.log('ionViewDidLoad MallcardviewPage');
   }
 
 }
