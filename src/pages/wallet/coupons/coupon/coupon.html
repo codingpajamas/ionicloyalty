@@ -11,7 +11,7 @@
         <ion-icon name="home"></ion-icon>
       </button>
     </ion-buttons>
-    <ion-title text-center>Coupons</ion-title> 
+    <ion-title text-center>My Coupons</ion-title> 
     <ion-buttons end> 
       <button ion-button icon-only (click)="goTo('CouponlistPage')">
         <ion-icon name="add"></ion-icon>
@@ -22,15 +22,13 @@
 
 
 <ion-content> 
-  <ion-grid> 
-    <ion-row class="mb10">
-      <ion-col>
-        <h6 class="m0" text-center>My Coupons</h6>
-      </ion-col> 
-    </ion-row>
+  <ion-grid>  
     <ion-row>
       <ion-col col-6>
         <div (click)="goTo('CouponviewPage')" class="card-wrap mb10">
+            <div class="card-timer">
+                <span>02Days</span> 
+              </div>
           <img src="/assets/imgs/coupon2.png" class="card-img" />
           <ion-row>
             <ion-col col-2 no-padding>
@@ -47,6 +45,7 @@
       </ion-col>
       <ion-col col-6>
         <div (click)="goTo('CouponviewPage')" class="card-wrap mb10">
+          
           <img src="/assets/imgs/coupon2.png" class="card-img" />
           <ion-row>
             <ion-col col-2 no-padding>
@@ -63,6 +62,7 @@
       </ion-col>
       <ion-col col-6>
         <div (click)="goTo('CouponviewPage')" class="card-wrap mb10">
+          
           <img src="/assets/imgs/coupon2.png" class="card-img" />
           <ion-row>
             <ion-col col-2 no-padding>
