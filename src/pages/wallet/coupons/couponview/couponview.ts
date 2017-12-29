@@ -2,30 +2,26 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the CouponlistPage page.
+ * Generated class for the CouponviewPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
 
 @IonicPage({
-    defaultHistory: ['CouponPage']
+  defaultHistory: ['CouponPage']
 })
 @Component({
-  selector: 'page-couponlist',
-  templateUrl: 'couponlist.html',
+  selector: 'page-couponview',
+  templateUrl: 'couponview.html',
 })
-export class CouponlistPage {
+export class CouponviewPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  goTo(page:string){
-  	this.navCtrl.push(page);
-  }
-
   ionViewDidLoad() {
-    console.log('ionViewDidLoad CouponlistPage');
+    console.log('ionViewDidLoad CouponviewPage');
   }
 
 }
