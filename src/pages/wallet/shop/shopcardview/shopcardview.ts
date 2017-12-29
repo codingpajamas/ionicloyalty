@@ -17,7 +17,13 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ShopcardviewPage {
 
+  carddetailtype:string = 'redeemables';
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+  }
+
+  goTo(page:string){
+  	this.navCtrl.push(page);
   }
 
   ionViewDidLoad() {

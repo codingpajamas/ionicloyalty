@@ -8,13 +8,155 @@
 
   <ion-navbar color="danger">
     <ion-title>Shop Card Details</ion-title>
+    <ion-buttons end> 
+      <button ion-button icon-only (click)="goTo('ShopcardlistPage')">
+        <ion-icon name="basket"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content class="bg-grey">
+  <div class="card-page-view">
+    <img src="/assets/imgs/card.png" alt="" class="card-page-img">
+    <div class="card-page-content mb60">
+      <ion-card>
+        <ion-item>
+          <ion-avatar item-start>
+            <img class="br-0" src="/assets/imgs/jobi.png">
+          </ion-avatar>
+          <h2>2500 Points</h2>
+          <p>Jollibee Rewards Card</p>
+        </ion-item>
+      </ion-card>
+      <ion-card>
 
+        <ion-card-header>
+          <ion-segment [(ngModel)]="carddetailtype" color="danger">
+            <ion-segment-button value="redeemables">
+              Redeemables
+            </ion-segment-button>
+            <ion-segment-button value="transactions">
+              Transactions
+            </ion-segment-button>
+          </ion-segment>
+        </ion-card-header>
+      
+        <ion-card-content>
+          <div [ngSwitch]="carddetailtype">
+            <ion-list *ngSwitchCase="'redeemables'">
+              <ion-item class="full-border">
+                <ion-thumbnail item-start>
+                  <img src="/assets/imgs/logo.png">
+                </ion-thumbnail>
+                <h2>Redeem Item</h2>
+                <p>100pts</p>
+                <button ion-button clear item-end>Add</button>
+              </ion-item> 
+              <ion-item class="full-border">
+                <ion-thumbnail item-start>
+                  <img src="/assets/imgs/logo.png">
+                </ion-thumbnail>
+                <h2>Redeem Item</h2>
+                <p>100pts</p>
+                <button ion-button clear item-end>Add</button>
+              </ion-item> 
+              <ion-item class="full-border">
+                <ion-thumbnail item-start>
+                  <img src="/assets/imgs/logo.png">
+                </ion-thumbnail>
+                <h2>Redeem Item</h2>
+                <p>100pts</p>
+                <button ion-button clear item-end>Add</button>
+              </ion-item> 
+              <ion-item class="full-border">
+                <ion-thumbnail item-start>
+                  <img src="/assets/imgs/logo.png">
+                </ion-thumbnail>
+                <h2>Redeem Item</h2>
+                <p>100pts</p>
+                <button ion-button clear item-end>Add</button>
+              </ion-item> 
+            </ion-list>
+        
+            <ion-list *ngSwitchCase="'transactions'">
+              <ion-item class="full-border">
+                <ion-avatar item-start class="mr5">
+                  <img src="/assets/imgs/jobi.png">
+                </ion-avatar>
+                <h2>Jollibee Trinona Mall</h2>
+                <ion-row class="font12 text-grey">
+                  <ion-col>
+                    12/15/2017
+                  </ion-col>
+                  <ion-col text-center>
+                    +10
+                  </ion-col> 
+                  <ion-col text-right>
+                    2500
+                  </ion-col>
+                </ion-row>  
+              </ion-item> 
+              <ion-item class="full-border">
+                <ion-avatar item-start class="mr5">
+                  <img src="/assets/imgs/jobi.png">
+                </ion-avatar>
+                <h2>Jollibee Trinona Mall</h2>
+                <ion-row class="font12 text-grey">
+                  <ion-col>
+                    12/15/2017
+                  </ion-col>
+                  <ion-col text-center>
+                    +100
+                  </ion-col> 
+                  <ion-col text-right>
+                    2400
+                  </ion-col>
+                </ion-row>  
+              </ion-item> 
+              <ion-item class="full-border">
+                <ion-avatar item-start class="mr5">
+                  <img src="/assets/imgs/jobi.png">
+                </ion-avatar>
+                <h2>Jollibee Trinona Mall</h2>
+                <ion-row class="font12 text-grey">
+                  <ion-col>
+                    12/15/2017
+                  </ion-col>
+                  <ion-col text-center>
+                    +100
+                  </ion-col> 
+                  <ion-col text-right>
+                    2300
+                  </ion-col>
+                </ion-row>  
+              </ion-item> 
+              <ion-item class="full-border">
+                <ion-avatar item-start class="mr5">
+                  <img src="/assets/imgs/jobi.png">
+                </ion-avatar>
+                <h2>Jollibee Trinona Mall</h2>
+                <ion-row class="font12 text-grey">
+                  <ion-col>
+                    12/15/2017
+                  </ion-col>
+                  <ion-col text-center>
+                    +300
+                  </ion-col> 
+                  <ion-col text-right>
+                    2000
+                  </ion-col>
+                </ion-row>  
+              </ion-item> 
+            </ion-list> 
+          </div>
+        </ion-card-content>
+      
+      </ion-card>
+    </div>
+  </div>
 </ion-content>
 
 <wallet-footer-menu></wallet-footer-menu>

@@ -118,10 +118,28 @@
 // list override
 ion-item.full-border {
 	border-bottom: 1px solid #dedede;
+	padding: 0px;
 }
 ion-item.full-border .item-inner {
 	border-bottom: none !important;
+	padding: 0px;
 }
+
+// card details page
+.card-page-view {
+	position: relative;
+}
+.card-page-img {
+	width: 110%;
+    margin-left: -5%;
+    max-width: 110%;
+    margin-top: -10px;
+}
+.card-page-content {
+	margin-top: -50px;
+	position: relative;
+}
+
 
 
 
@@ -248,6 +266,9 @@ ion-item.full-border .item-inner {
 .mb40 {
 	margin-bottom: 40px !important;
 }
+.mb60 {
+	margin-bottom: 60px !important;
+}
 .mb80 {
 	margin-bottom: 80px !important;
 }
@@ -320,3 +341,12 @@ ion-item.full-border .item-inner {
 	font-size: 45px !important;
 	line-height: 45px !important;
 } 
+
+.text-grey {
+	color: #777 !important;
+}
+
+// border radius
+.br-0 {
+	border-radius: 0 !important;
+}
