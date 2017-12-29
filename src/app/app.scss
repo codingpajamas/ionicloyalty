@@ -115,7 +115,7 @@
 	background: #f53d3d;
 }
 
-// list override
+/*// list override*/
 ion-item.full-border {
 	border-bottom: 1px solid #dedede;
 	padding: 0px;
@@ -125,7 +125,7 @@ ion-item.full-border .item-inner {
 	padding: 0px;
 }
 
-// card details page
+/*// card details page*/
 .card-page-view {
 	position: relative;
 }
@@ -139,6 +139,13 @@ ion-item.full-border .item-inner {
 	margin-top: -50px;
 	position: relative;
 }
+.redeem-list-details {
+	font-size: 12px
+}
+.redeem-list-details img {
+	height: 12px;
+}
+
 
 
 
@@ -346,7 +353,12 @@ ion-item.full-border .item-inner {
 	color: #777 !important;
 }
 
-// border radius
+/*border radius*/
 .br-0 {
 	border-radius: 0 !important;
+}
+
+/* line / separator */
+.separator-x {
+	border-bottom: 1px solid rgba(0,0,0,0.1);
 }
