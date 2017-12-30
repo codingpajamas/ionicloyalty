@@ -14,10 +14,26 @@ import { NavController } from 'ionic-angular';
 export class MainFooterMenuComponent {
 
   activeMenu = '';
+  promoPages = ['PromoPage', 'PromoviewPage', 'PromolistPage'];
+  mallInfoPages = ['MallinfoPage', 'MalleventPage', 'MalldirectoryPage'];
+  notifPages = ['NotificationPage'];
  
   constructor(public navCtrl: NavController) {
     this.navCtrl.viewDidEnter.subscribe((view) => {
-	    this.activeMenu = view.instance.constructor.name;
+	    console.log(view.instance.constructor.name)
+
+      if(this.promoPages.indexOf(view.instance.constructor.name) != -1){
+        this.activeMenu = 'promo';
+      } 
+
+      if(this.mallInfoPages.indexOf(view.instance.constructor.name) != -1){
+        this.activeMenu = 'mallinfo';
+      } 
+
+      if(this.notifPages.indexOf(view.instance.constructor.name) != -1){
+        this.activeMenu = 'notification';
+      } 
+
 	});
   } 
 
