@@ -12,6 +12,10 @@ export class HomePage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
+  goTo(page:string){
+  	this.navCtrl.push(page);
+  }
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad NotificationPage');
   }
