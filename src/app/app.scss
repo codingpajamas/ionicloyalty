@@ -114,6 +114,15 @@
 .stamp-hole.stamp-hole-claimed {
 	background: #f53d3d;
 }
+.stamp-hole-h2 .stamp-hole {
+	border: 1px solid #999;
+	width: 20px;
+	height: 20px;
+}
+.stamp-hole-h2 .stamp-hole.stamp-hole-claimed {
+	background: #f53d3d;
+	border: 1px solid #f53d3d;
+}
 
 /*// list override*/
 ion-item.full-border {

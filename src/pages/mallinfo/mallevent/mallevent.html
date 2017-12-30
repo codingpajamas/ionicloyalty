@@ -7,18 +7,19 @@
 <ion-header>
 
   <ion-navbar color="danger">
-    <ion-title>Mallevent</ion-title>
+    <ion-title>Mall Details</ion-title>
+    <ion-buttons end> 
+      <button ion-button icon-only (click)="goTo('MalldirectoryPage')">
+        <ion-icon name="ios-navigate"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
-
-	<button ion-button (click)="goTo('MalldirectoryPage')">
-        <ion-icon name="home"></ion-icon> Mall Item
-      </button> 
-
+<ion-content class="bg-grey">
+ 
   <ion-card> 
     <ion-item>
       <ion-avatar item-start>
