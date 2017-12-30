@@ -32,9 +32,8 @@ export class MainFooterMenuComponent {
 
       if(this.notifPages.indexOf(view.instance.constructor.name) != -1){
         this.activeMenu = 'notification';
-      } 
-
-	});
+      }  
+	  });
   } 
 
   navigateTo(page:string){

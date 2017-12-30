@@ -14,11 +14,33 @@ import { NavController } from 'ionic-angular';
 export class WalletFooterMenuComponent {
 
   activeMenu: string;
+  mallPages = ['MallcardPage', 'MallcardviewPage', 'MallcardlistPage'];
+  shopPages = ['ShopcardPage', 'ShopcardlistPage', 'ShopcardviewPage'];
+  couponPages = ['CouponPage', 'CouponlistPage', 'CouponviewPage'];
+  stampPages = ['StampcardPage', 'StampviewPage', 'StamplistPage'];
 
   constructor(public navCtrl: NavController) {
     this.navCtrl.viewDidEnter.subscribe((view) => {
 	    this.activeMenu = view.instance.constructor.name;
-	});
+
+      console.log(view.instance.constructor.name)
+
+      if(this.mallPages.indexOf(view.instance.constructor.name) != -1){
+        this.activeMenu = 'mall';
+      } 
+
+      if(this.shopPages.indexOf(view.instance.constructor.name) != -1){
+        this.activeMenu = 'shop';
+      } 
+
+      if(this.couponPages.indexOf(view.instance.constructor.name) != -1){
+        this.activeMenu = 'coupon';
+      } 
+
+      if(this.stampPages.indexOf(view.instance.constructor.name) != -1){
+        this.activeMenu = 'stamp';
+      } 
+	  });
   }
 
   navigateTo(page:string){
