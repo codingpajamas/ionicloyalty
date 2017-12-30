@@ -12,10 +12,14 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'main-footer-menu.html'
 })
 export class MainFooterMenuComponent {
+
+  activeMenu = '';
  
   constructor(public navCtrl: NavController) {
-    
-  }
+    this.navCtrl.viewDidEnter.subscribe((view) => {
+	    this.activeMenu = view.instance.constructor.name;
+	});
+  } 
 
   navigateTo(page:string){
   	this.navCtrl.push(page);

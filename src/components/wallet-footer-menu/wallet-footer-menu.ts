@@ -13,10 +13,12 @@ import { NavController } from 'ionic-angular';
 })
 export class WalletFooterMenuComponent {
 
-  text: string;
+  activeMenu: string;
 
   constructor(public navCtrl: NavController) {
-    
+    this.navCtrl.viewDidEnter.subscribe((view) => {
+	    this.activeMenu = view.instance.constructor.name;
+	});
   }
 
   navigateTo(page:string){

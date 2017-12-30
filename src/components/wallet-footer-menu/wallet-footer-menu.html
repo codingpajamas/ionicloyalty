@@ -1,26 +1,26 @@
 <ion-footer class="footer-menu">
-  <ion-grid> 
+  <ion-grid no-padding> 
     <ion-row>
-      <ion-col text-center>
-        <a (click)="navigateTo('MallcardPage')" class="link-menu-bar link-menu-bar-active">
+      <ion-col text-center no-padding>
+        <a (click)="navigateTo('MallcardPage')" class="link-menu-bar" [ngClass]="{'link-menu-bar-active':activeMenu =='MallcardPage'}">
           <img src="/assets/imgs/footer-menu/mall.png"/>
           <span>Mall Cards</span>
         </a> 
       </ion-col>
-      <ion-col text-center>
-        <a (click)="navigateTo('ShopcardPage')" class="link-menu-bar">
+      <ion-col text-center no-padding>
+        <a (click)="navigateTo('ShopcardPage')" class="link-menu-bar" [ngClass]="{'link-menu-bar-active':activeMenu =='ShopcardPage'}">
           <img src="/assets/imgs/footer-menu/shop.png"/>
           <span>Shop Cards</span>
         </a> 
       </ion-col>
-      <ion-col text-center>
-        <a (click)="navigateTo('CouponPage')" class="link-menu-bar">
+      <ion-col text-center no-padding>
+        <a (click)="navigateTo('CouponPage')" class="link-menu-bar" [ngClass]="{'link-menu-bar-active':activeMenu =='CouponPage'}">
           <img src="/assets/imgs/footer-menu/coupon.png"/>
           <span>Coupons</span>
         </a> 
       </ion-col>
-      <ion-col text-center>
-        <a (click)="navigateTo('StampcardPage')" class="link-menu-bar">
+      <ion-col text-center no-padding>
+        <a (click)="navigateTo('StampcardPage')" class="link-menu-bar" [ngClass]="{'link-menu-bar-active':activeMenu =='StampcardPage'}">
           <img src="/assets/imgs/footer-menu/stamp.png"/>
           <span>Stamp Cards</span>
         </a> 

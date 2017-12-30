@@ -22,25 +22,25 @@
 	color: #fff;
 	padding-top: 5px;
 	opacity: 0.8;
+	padding: 10px 5px;
 }
 .link-menu-bar.link-menu-bar-active { 
 	opacity: 1;
-	font-size: 25px;
-    position: relative; 
-    padding-top: 0px;
+	background: #f21919;
 }
 .link-menu-bar span {
 	font-size: 12px;
 	display: block;
 }
 .link-menu-bar.link-menu-bar-active span {
-	font-size: 13px
+	
 }
-.link-menu-bar img {
-	height: 30px;
+.link-menu-bar img, .link-menu-bar ion-icon {
+	height: 30px; 
 }
-.link-menu-bar.link-menu-bar-active img {
-	height: 35px;
+.link-menu-bar.link-menu-bar-active img,
+.link-menu-bar.link-menu-bar-active ion-icon {
+	opacity: 1;
 }
 
 .footer-menu {
@@ -117,8 +117,7 @@
 
 /*// list override*/
 ion-item.full-border {
-	border-bottom: 1px solid #dedede;
-	padding: 0px;
+	border-bottom: 1px solid #dedede; 
 }
 ion-item.full-border .item-inner {
 	border-bottom: none !important;

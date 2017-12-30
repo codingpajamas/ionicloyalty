@@ -18,6 +18,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class PromoPage {
 
+  activeMenu = 'main-promo';
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 

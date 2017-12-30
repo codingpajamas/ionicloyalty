@@ -1,26 +1,26 @@
 <ion-footer class="footer-menu">
-  <ion-grid> 
+  <ion-grid no-padding> 
     <ion-row>
-      <ion-col text-center>
-        <a (click)="navigateTo('MallcardPage')" class="link-menu-bar"> <!-- link-menu-bar-active -->
+      <ion-col text-center no-padding>
+        <a (click)="navigateTo('MallcardPage')" class="link-menu-bar" [ngClass]="{'link-menu-bar-active':activeMenu =='MallcardPage'}"> 
           <ion-icon name="card"></ion-icon> 
           <span>Wallet</span>
         </a> 
       </ion-col>
-      <ion-col text-center>
-        <a (click)="navigateTo('PromoPage')" class="link-menu-bar">
+      <ion-col text-center no-padding>
+        <a (click)="navigateTo('PromoPage')" class="link-menu-bar" [ngClass]="{'link-menu-bar-active':activeMenu =='PromoPage'}">
           <ion-icon name="pricetags"></ion-icon> 
           <span>Promo</span>
         </a> 
       </ion-col>
-      <ion-col text-center>
-        <a (click)="navigateTo('MallinfoPage')" class="link-menu-bar">
+      <ion-col text-center no-padding>
+        <a (click)="navigateTo('MallinfoPage')" class="link-menu-bar" [ngClass]="{'link-menu-bar-active':activeMenu =='MallinfoPage'}">
           <ion-icon name="information-circle"></ion-icon> 
           <span>Mall Info</span>
         </a> 
       </ion-col>
-      <ion-col text-center>
-        <a (click)="navigateTo('NotificationPage')" class="link-menu-bar">
+      <ion-col text-center no-padding>
+        <a (click)="navigateTo('NotificationPage')" class="link-menu-bar" [ngClass]="{'link-menu-bar-active':activeMenu =='NotificationPage'}">
           <ion-icon name="notifications"></ion-icon> 
           <span>Notifications</span>
         </a> 
