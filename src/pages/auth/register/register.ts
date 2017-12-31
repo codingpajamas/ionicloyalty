@@ -18,6 +18,12 @@ export class RegisterPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
+  country = '';
+
+  goTo(page:string){
+  	this.navCtrl.push(page);
+  }
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad RegisterPage');
   }

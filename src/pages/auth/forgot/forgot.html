@@ -7,12 +7,37 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Forgot</ion-title>
+    <ion-title>Forgot Password</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
+
 <ion-content padding>
 
-</ion-content>
+    <ion-card> 
+      <ion-card-content>
+          <ion-list class="mb20 form-input-list"> 
+            <ion-item>
+              <ion-label floating>Email Address</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item> 
+          </ion-list>
+          <button ion-button full large color="danger" (click)="goTo('HomePage')">Reset Password</button>
+      </ion-card-content> 
+    </ion-card>
+  
+    <ion-grid class="text-grey">  
+      <ion-row>
+        <ion-col (click)="goTo('ForgotPage')">
+          Forgot Password
+        </ion-col>
+        <ion-col text-right (click)="goTo('RegisterPage')">
+          Register
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  
+  </ion-content>
+  

@@ -1,6 +1,6 @@
 <ion-menu type="overlay" [content]="content">
     <ion-header>
-        <ion-toolbar>
+        <ion-toolbar color="danger">
             <ion-title>Menu</ion-title>
         </ion-toolbar>
     </ion-header>
@@ -9,7 +9,10 @@
             <button ion-item (click)="openPage(notificationPage)">
                 Notifications
             </button> 
-        </ion-list>
+            <button ion-item (click)="goTo('LoginPage')">
+                Logout
+            </button> 
+        </ion-list> 
     </ion-content>
 </ion-menu>
 

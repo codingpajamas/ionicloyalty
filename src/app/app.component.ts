@@ -12,7 +12,12 @@ export class MyApp {
   rootPage:string = 'HomePage';
   notificationPage:any;
 
-  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, public menuCtrl: MenuController) {
+  constructor(
+    platform: Platform, 
+    statusBar: StatusBar, 
+    splashScreen: SplashScreen, 
+    public menuCtrl: MenuController
+  ) {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
@@ -30,5 +35,10 @@ export class MyApp {
     // we wouldn't want the back button to show in this scenario
     this.menuCtrl.close();
     this.nav.setRoot(page);
+  }
+
+  goTo(page:string){
+    this.menuCtrl.close();
+    this.nav.push(page);
   }
 }

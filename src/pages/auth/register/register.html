@@ -13,6 +13,56 @@
 </ion-header>
 
 
+
 <ion-content padding>
 
-</ion-content>
+    <ion-card> 
+      <ion-card-content>
+          <ion-list class="mb20 form-input-list"> 
+            <ion-item>
+              <ion-label floating>Email Address</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+          
+            <ion-item>
+              <ion-label floating>Password</ion-label>
+              <ion-input type="password"></ion-input>
+            </ion-item> 
+
+            <ion-item>
+              <ion-label floating>First Name</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label floating>Last Name</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label floating>Country</ion-label>
+              <ion-select [(ngModel)]="country"  interface="action-sheet">
+                <ion-option value="ind">Indonesia</ion-option>
+                <ion-option value="nes">Philippines</ion-option>
+                <ion-option value="n64">Singapore</ion-option>
+                <ion-option value="ps">Thailand</ion-option> 
+              </ion-select> 
+            </ion-item>
+          </ion-list>
+          <button ion-button full large color="danger" (click)="goTo('HomePage')">Register</button>
+      </ion-card-content> 
+    </ion-card>
+  
+    <ion-grid class="text-grey">  
+      <ion-row>
+        <ion-col (click)="goTo('ForgotPage')">
+          Forgot Password
+        </ion-col>
+        <ion-col text-right (click)="goTo('LoginPage')">
+          Login
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  
+  </ion-content>
+  

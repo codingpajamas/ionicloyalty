@@ -165,8 +165,70 @@ ion-item.full-border .item-inner {
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
 	border-radius: 5px;
 	padding: 5px;
-
 }
+
+
+.action-sheet-icon.ion-md-flag-ph {
+	background: url('/assets/imgs/flags/ph.png') 50% no-repeat;
+	height: 20px;
+	border: 1px solid rgba(0,0,0,0.1);
+    width: 35px;
+    margin-right: 15px;
+}
+.action-sheet-icon.ion-md-flag-sg {
+	background: url('/assets/imgs/flags/sg.png') 50% no-repeat;
+	height: 20px;
+	border: 1px solid rgba(0,0,0,0.1);
+    width: 35px;
+    margin-right: 15px;
+}
+.action-sheet-icon.ion-md-flag-br {
+	background: url('/assets/imgs/flags/br.png') 50% no-repeat;
+	height: 20px;
+	border: 1px solid rgba(0,0,0,0.1);
+    width: 35px;
+    margin-right: 15px;
+}
+.action-sheet-icon.ion-md-flag-cam {
+	background: url('/assets/imgs/flags/cam.png') 50% no-repeat;
+	height: 20px;
+	border: 1px solid rgba(0,0,0,0.1);
+    width: 35px;
+    margin-right: 15px;
+}
+.action-sheet-icon.ion-md-flag-ind {
+	background: url('/assets/imgs/flags/ind.png') 50% no-repeat;
+	height: 20px;
+	border: 1px solid rgba(0,0,0,0.1);
+    width: 35px;
+    margin-right: 15px;
+}
+.action-sheet-icon.ion-md-flag-lao {
+	background: url('/assets/imgs/flags/lao.png') 50% no-repeat;
+	height: 20px;
+	border: 1px solid rgba(0,0,0,0.1);
+    width: 35px;
+    margin-right: 15px;
+}
+.action-sheet-icon.ion-md-flag-mya {
+	background: url('/assets/imgs/flags/mya.png') 50% no-repeat;
+	height: 20px;
+	border: 1px solid rgba(0,0,0,0.1);
+    width: 35px;
+    margin-right: 15px;
+}
+.action-sheet-icon.ion-md-flag-tha {
+	background: url('/assets/imgs/flags/tha.png') 50% no-repeat;
+	height: 20px;
+	border: 1px solid rgba(0,0,0,0.1);
+    width: 35px;
+    margin-right: 15px;
+}
+
+.form-input-list .item-input:last-child {
+	border-bottom: none;
+}
+
 
 
 
