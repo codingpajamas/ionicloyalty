@@ -18,6 +18,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class MalleventPage {
 
+  mallInfotype:string = 'events';
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 

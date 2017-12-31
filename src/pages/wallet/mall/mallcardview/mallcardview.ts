@@ -17,7 +17,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class MallcardviewPage {
 
-  carddetailtype:string = 'redeemables';
+  carddetailtype:string = 'redeemables'; 
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }

@@ -7,204 +7,258 @@
 <ion-header>
 
   <ion-navbar color="danger">
-    <ion-title>Mall Details</ion-title>
-    <ion-buttons end> 
-      <button ion-button icon-only (click)="goTo('MalldirectoryPage')">
-        <ion-icon name="ios-navigate"></ion-icon>
-      </button>
-    </ion-buttons>
+    <ion-title>Mall Details</ion-title> 
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content class="bg-grey">
- 
-  <ion-card> 
-    <ion-item>
-      <ion-avatar item-start>
-        <img src="./assets/imgs/trinoma.png">
-      </ion-avatar>
-      <h2>Trinoma Mall</h2>
-      <p>January 5, 2018</p>
-    </ion-item>
+<ion-content class="bg-grey"> 
 
-    <img src="./assets/imgs/jb.jpg">
+  <div class="mall-info-wrap" text-center>
+    <img src="./assets/imgs/hillogo.png">
+    <h6 class="mb0 mt10">Hillion Mall</h6>
+    <p class="mt0 mb0">17 Petir Road Singapore 678278</p>
+  </div>
 
-    <ion-card-content>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    </ion-card-content>
+  <div padding>
+    <ion-segment [(ngModel)]="mallInfotype" color="danger">
+      <ion-segment-button value="events">
+        Events
+      </ion-segment-button>
+      <ion-segment-button value="directory">
+        Directory
+      </ion-segment-button>
+    </ion-segment>
+  </div>
 
-    <ion-row>
-      <ion-col>
-        <button ion-button icon-left clear small>
-          <ion-icon name="thumbs-up"></ion-icon>
-          <div>12 Likes</div>
-        </button>
-      </ion-col>
-      <ion-col>
-        <button ion-button icon-left clear small>
-          <ion-icon name="text"></ion-icon>
-          <div>4 Comments</div>
-        </button>
-      </ion-col> 
-    </ion-row> 
-  </ion-card>
+  <div [ngSwitch]="mallInfotype">
+    <div *ngSwitchCase="'events'">
+        <ion-card> 
+          <ion-item>
+            <ion-avatar item-start>
+              <img src="./assets/imgs/trinoma.png">
+            </ion-avatar>
+            <h2>Trinoma Mall</h2>
+            <p>January 5, 2018</p>
+          </ion-item>
+      
+          <img src="./assets/imgs/jb.jpg">
+      
+          <ion-card-content>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </ion-card-content>
+      
+          <ion-row>
+            <ion-col>
+              <button ion-button icon-left clear small>
+                <ion-icon name="thumbs-up"></ion-icon>
+                <div>12 Likes</div>
+              </button>
+            </ion-col>
+            <ion-col>
+              <button ion-button icon-left clear small>
+                <ion-icon name="text"></ion-icon>
+                <div>4 Comments</div>
+              </button>
+            </ion-col> 
+          </ion-row> 
+        </ion-card>
+      
+        <ion-card> 
+          <ion-item>
+            <ion-avatar item-start>
+              <img src="./assets/imgs/trinoma.png">
+            </ion-avatar>
+            <h2>Trinoma Mall</h2>
+            <p>January 5, 2018</p>
+          </ion-item>
+      
+          <img src="./assets/imgs/jb.jpg">
+      
+          <ion-card-content>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </ion-card-content>
+      
+          <ion-row>
+            <ion-col>
+              <button ion-button icon-left clear small>
+                <ion-icon name="thumbs-up"></ion-icon>
+                <div>12 Likes</div>
+              </button>
+            </ion-col>
+            <ion-col>
+              <button ion-button icon-left clear small>
+                <ion-icon name="text"></ion-icon>
+                <div>4 Comments</div>
+              </button>
+            </ion-col> 
+          </ion-row> 
+        </ion-card>
+      
+        <ion-card> 
+          <ion-item>
+            <ion-avatar item-start>
+              <img src="./assets/imgs/trinoma.png">
+            </ion-avatar>
+            <h2>Trinoma Mall</h2>
+            <p>January 5, 2018</p>
+          </ion-item>
+      
+          <img src="./assets/imgs/jb.jpg">
+      
+          <ion-card-content>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </ion-card-content>
+      
+          <ion-row>
+            <ion-col>
+              <button ion-button icon-left clear small>
+                <ion-icon name="thumbs-up"></ion-icon>
+                <div>12 Likes</div>
+              </button>
+            </ion-col>
+            <ion-col>
+              <button ion-button icon-left clear small>
+                <ion-icon name="text"></ion-icon>
+                <div>4 Comments</div>
+              </button>
+            </ion-col> 
+          </ion-row> 
+        </ion-card>
+      
+        <ion-card> 
+          <ion-item>
+            <ion-avatar item-start>
+              <img src="./assets/imgs/trinoma.png">
+            </ion-avatar>
+            <h2>Trinoma Mall</h2>
+            <p>January 5, 2018</p>
+          </ion-item>
+      
+          <img src="./assets/imgs/jb.jpg">
+      
+          <ion-card-content>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </ion-card-content>
+      
+          <ion-row>
+            <ion-col>
+              <button ion-button icon-left clear small>
+                <ion-icon name="thumbs-up"></ion-icon>
+                <div>12 Likes</div>
+              </button>
+            </ion-col>
+            <ion-col>
+              <button ion-button icon-left clear small>
+                <ion-icon name="text"></ion-icon>
+                <div>4 Comments</div>
+              </button>
+            </ion-col> 
+          </ion-row> 
+        </ion-card>
+      
+        <ion-card> 
+          <ion-item>
+            <ion-avatar item-start>
+              <img src="./assets/imgs/trinoma.png">
+            </ion-avatar>
+            <h2>Trinoma Mall</h2>
+            <p>January 5, 2018</p>
+          </ion-item>
+      
+          <img src="./assets/imgs/jb.jpg">
+      
+          <ion-card-content>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </ion-card-content>
+      
+          <ion-row>
+            <ion-col>
+              <button ion-button icon-left clear small>
+                <ion-icon name="thumbs-up"></ion-icon>
+                <div>12 Likes</div>
+              </button>
+            </ion-col>
+            <ion-col>
+              <button ion-button icon-left clear small>
+                <ion-icon name="text"></ion-icon>
+                <div>4 Comments</div>
+              </button>
+            </ion-col> 
+          </ion-row> 
+        </ion-card>
+      
+        <ion-card> 
+          <ion-item>
+            <ion-avatar item-start>
+              <img src="./assets/imgs/trinoma.png">
+            </ion-avatar>
+            <h2>Trinoma Mall</h2>
+            <p>January 5, 2018</p>
+          </ion-item>
+      
+          <img src="./assets/imgs/jb.jpg">
+      
+          <ion-card-content>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </ion-card-content>
+      
+          <ion-row>
+            <ion-col>
+              <button ion-button icon-left clear small>
+                <ion-icon name="thumbs-up"></ion-icon>
+                <div>12 Likes</div>
+              </button>
+            </ion-col>
+            <ion-col>
+              <button ion-button icon-left clear small>
+                <ion-icon name="text"></ion-icon>
+                <div>4 Comments</div>
+              </button>
+            </ion-col> 
+          </ion-row> 
+        </ion-card>
+    </div>
 
-  <ion-card> 
-    <ion-item>
-      <ion-avatar item-start>
-        <img src="./assets/imgs/trinoma.png">
-      </ion-avatar>
-      <h2>Trinoma Mall</h2>
-      <p>January 5, 2018</p>
-    </ion-item>
-
-    <img src="./assets/imgs/jb.jpg">
-
-    <ion-card-content>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    </ion-card-content>
-
-    <ion-row>
-      <ion-col>
-        <button ion-button icon-left clear small>
-          <ion-icon name="thumbs-up"></ion-icon>
-          <div>12 Likes</div>
-        </button>
-      </ion-col>
-      <ion-col>
-        <button ion-button icon-left clear small>
-          <ion-icon name="text"></ion-icon>
-          <div>4 Comments</div>
-        </button>
-      </ion-col> 
-    </ion-row> 
-  </ion-card>
-
-  <ion-card> 
-    <ion-item>
-      <ion-avatar item-start>
-        <img src="./assets/imgs/trinoma.png">
-      </ion-avatar>
-      <h2>Trinoma Mall</h2>
-      <p>January 5, 2018</p>
-    </ion-item>
-
-    <img src="./assets/imgs/jb.jpg">
-
-    <ion-card-content>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    </ion-card-content>
-
-    <ion-row>
-      <ion-col>
-        <button ion-button icon-left clear small>
-          <ion-icon name="thumbs-up"></ion-icon>
-          <div>12 Likes</div>
-        </button>
-      </ion-col>
-      <ion-col>
-        <button ion-button icon-left clear small>
-          <ion-icon name="text"></ion-icon>
-          <div>4 Comments</div>
-        </button>
-      </ion-col> 
-    </ion-row> 
-  </ion-card>
-
-  <ion-card> 
-    <ion-item>
-      <ion-avatar item-start>
-        <img src="./assets/imgs/trinoma.png">
-      </ion-avatar>
-      <h2>Trinoma Mall</h2>
-      <p>January 5, 2018</p>
-    </ion-item>
-
-    <img src="./assets/imgs/jb.jpg">
-
-    <ion-card-content>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    </ion-card-content>
-
-    <ion-row>
-      <ion-col>
-        <button ion-button icon-left clear small>
-          <ion-icon name="thumbs-up"></ion-icon>
-          <div>12 Likes</div>
-        </button>
-      </ion-col>
-      <ion-col>
-        <button ion-button icon-left clear small>
-          <ion-icon name="text"></ion-icon>
-          <div>4 Comments</div>
-        </button>
-      </ion-col> 
-    </ion-row> 
-  </ion-card>
-
-  <ion-card> 
-    <ion-item>
-      <ion-avatar item-start>
-        <img src="./assets/imgs/trinoma.png">
-      </ion-avatar>
-      <h2>Trinoma Mall</h2>
-      <p>January 5, 2018</p>
-    </ion-item>
-
-    <img src="./assets/imgs/jb.jpg">
-
-    <ion-card-content>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    </ion-card-content>
-
-    <ion-row>
-      <ion-col>
-        <button ion-button icon-left clear small>
-          <ion-icon name="thumbs-up"></ion-icon>
-          <div>12 Likes</div>
-        </button>
-      </ion-col>
-      <ion-col>
-        <button ion-button icon-left clear small>
-          <ion-icon name="text"></ion-icon>
-          <div>4 Comments</div>
-        </button>
-      </ion-col> 
-    </ion-row> 
-  </ion-card>
-
-  <ion-card> 
-    <ion-item>
-      <ion-avatar item-start>
-        <img src="./assets/imgs/trinoma.png">
-      </ion-avatar>
-      <h2>Trinoma Mall</h2>
-      <p>January 5, 2018</p>
-    </ion-item>
-
-    <img src="./assets/imgs/jb.jpg">
-
-    <ion-card-content>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    </ion-card-content>
-
-    <ion-row>
-      <ion-col>
-        <button ion-button icon-left clear small>
-          <ion-icon name="thumbs-up"></ion-icon>
-          <div>12 Likes</div>
-        </button>
-      </ion-col>
-      <ion-col>
-        <button ion-button icon-left clear small>
-          <ion-icon name="text"></ion-icon>
-          <div>4 Comments</div>
-        </button>
-      </ion-col> 
-    </ion-row> 
-  </ion-card>
+    <div *ngSwitchCase="'directory'">
+      <ion-item-group>
+          <ion-item-divider color="light">H</ion-item-divider>
+          <ion-item class="full-border" (click)="goTo('MalleventPage')">
+            <ion-avatar item-start>
+              <img src="./assets/imgs/hillogo.png">
+            </ion-avatar>
+            <h2>Shop Name</h2> 
+          </ion-item>
+          <ion-item class="full-border" (click)="goTo('MalleventPage')">
+            <ion-avatar item-start>
+              <img src="./assets/imgs/hillogo.png">
+            </ion-avatar>
+            <h2>Shop Name</h2> 
+          </ion-item>
+          <ion-item-divider color="light">I</ion-item-divider>
+          <ion-item class="full-border" (click)="goTo('MalleventPage')">
+            <ion-avatar item-start>
+              <img src="./assets/imgs/hillogo.png">
+            </ion-avatar>
+            <h2>Shop Name</h2> 
+          </ion-item>
+          <ion-item class="full-border" (click)="goTo('MalleventPage')">
+            <ion-avatar item-start>
+              <img src="./assets/imgs/hillogo.png">
+            </ion-avatar>
+            <h2>Shop Name</h2> 
+          </ion-item>
+          <ion-item-divider color="light">M</ion-item-divider>
+          <ion-item class="full-border" (click)="goTo('MalleventPage')">
+            <ion-avatar item-start>
+              <img src="./assets/imgs/hillogo.png">
+            </ion-avatar>
+            <h2>Shop Name</h2> 
+          </ion-item>
+        </ion-item-group> 
+    </div> 
+  </div> 
 
   <div class="mb40">&nbsp;</div>
 </ion-content>
