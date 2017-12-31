@@ -6,7 +6,7 @@
 -->
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar color="danger">
     <ion-title>Forgot Password</ion-title>
   </ion-navbar>
 
@@ -14,7 +14,7 @@
 
 
 
-<ion-content padding>
+<ion-content class="bg-grey" padding>
 
     <ion-card> 
       <ion-card-content>
@@ -30,8 +30,8 @@
   
     <ion-grid class="text-grey">  
       <ion-row>
-        <ion-col (click)="goTo('ForgotPage')">
-          Forgot Password
+        <ion-col (click)="goTo('LoginPage')">
+          Login
         </ion-col>
         <ion-col text-right (click)="goTo('RegisterPage')">
           Register
@@ -39,5 +39,6 @@
       </ion-row>
     </ion-grid>
   
+    <img src="./assets/imgs/Web-2.gif" class="footer-slider" />
   </ion-content>
   

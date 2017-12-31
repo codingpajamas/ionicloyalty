@@ -14,8 +14,8 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 
 *Stamp Details
 *Notification List
- Mall event 
- Mall directory
+*Mall event 
+*Mall directory
  Redeemable item details
-
+*auth
 */
